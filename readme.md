@@ -31,3 +31,7 @@ npx playwright test
 
 * Shared Data - The Orange HRM system is used by people to test automation, as such sometimes it gets broken. I've added something to catch an error when updating details, but it'll stop the test. The site refreshes after some time, so it should work later. Unfortunately, it stopped being broken after I added the catch, so I don't know if it will actually work...
 * Slow Response Times - occasionally the site runs slowly, I've increased the default timeout in playwright for this.
+
+## Improvements
+
+* There's some repetition of the URL, log in details and navigation.
