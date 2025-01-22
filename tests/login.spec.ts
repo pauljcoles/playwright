@@ -20,7 +20,7 @@ test.describe('OrangeHRM Login Page Tests', () => {
         await homePage.expectSuccessfulLogin();
     });
 
-    test('it should show error message with invalid credentials', async ({ page }) => {
+    test('it should show an error message with invalid credentials', async ({ page }) => {
         const loginPage = new loginPageElements(page);        
         await loginPage.login('invalid_user', 'invalid_pass');
         const errorMessage = await loginPage.expectErrorMessage('Invalid credentials');

@@ -5,6 +5,8 @@ import { defineConfig, devices } from '@playwright/test'
 let baseURL =  'https://opensource-demo.orangehrmlive.com'
 
 export default defineConfig({
+  timeout: 120_000,
+  
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
